@@ -11,7 +11,7 @@ rawCapture = PiRGBArray(camera, size=(320, 240))
 
 display_window = cv2.namedWindow("Faces")
 
-face_cascade = cv2.CascadeClassifier('/usr/share/opencv/haarcascades/haarcascade_frontalface_alt2.xml')
+face_cascade = cv2.CascadeClassifier('/home/pi/opencv/data/haarcascades/haarcascade_frontalface_alt2.xml')
 
 time.sleep(1)
 
