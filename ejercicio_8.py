@@ -20,10 +20,6 @@ def draw_circle(event,x,y,flags,param):
         global Final
         Final=True
 
-
-        
-
-
 # allow the camera to warmup
 time.sleep(0.1)
  
@@ -32,6 +28,7 @@ for frame in camera.capture_continuous(rawCapture, format="bgr", use_video_port=
 	# grab the raw NumPy array representing the image, then initialize the timestamp
 	# and occupied/unoccupied text
     image = frame.array
+    cv2.namedWindow("Frame")
     cv2.setMouseCallback("Frame",draw_circle)
     	# show the frame
     cv2.imshow("Frame", image)
