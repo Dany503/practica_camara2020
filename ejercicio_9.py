@@ -46,4 +46,4 @@ for frame in camera.capture_continuous(rawCapture, format="bgr", use_video_port=
          cv2.imwrite("afoto.jpg",image)
          break
 camera.close()
-
+cv2.destroyWindow("Frame")
