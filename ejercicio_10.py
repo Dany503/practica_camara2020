@@ -48,3 +48,6 @@ for frame in camera.capture_continuous(rawCapture, format="bgr", use_video_port=
          
 camera.close()
 cv2.destroyWindow("Frame")
+cv2.destroyWindow("A")
+cv2.destroyWindow("B")
+cv2.destroyWindow("BLEND")
